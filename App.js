@@ -45,27 +45,28 @@ const styles = StyleSheet.create({
     
   },
   nombre:{
-    fontWeight:'bold',
+    
     color:'white',
-    fontSize: 20
+    fontSize: 20,
+    fontWeight:'bold'
   },
   cuerpo:{
+    borderRadius:10,
     backgroundColor: 'white',
     padding: 20,
     marginTop: 20,
-    marginHorizontal:20,
-    borderRadius:10
+    marginHorizontal:20
+    
   },
   Image:{
-      marginLeft:30,
       width:100,
       height:100,
-      borderRadius:50
-      
+      borderRadius:50,
+      marginLeft:30
   },
   body:{
-    width: '100%',
     flex: 3,
+    width: '100%',
     backgroundColor: '#D6D4D4'
   }
 
