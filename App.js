@@ -12,7 +12,10 @@ export default function App() {
         <Text style={styles.nombre}>César Jesús León Martín</Text>
         </View>
       <View style={styles.body}>
-
+        <Text style={styles.cuerpo}> Soy estudiante de informatica en la universidad de la ull 
+        ademas de estudiar un cliclo superior de desarrollo de aplicaciones. me apasionan los
+        videojuegos y el cine. mi objetivo es estanciarme en un sitio que 
+        me guste y trabajar en lo que me gusta </Text>
       </View>
 
       
@@ -45,6 +48,10 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     color:'white',
     fontSize: 20
+  },
+  cuerpo:{
+    marginTop: 20,
+    marginHorizontal:20
   },
   Image:{
       marginLeft:30,
