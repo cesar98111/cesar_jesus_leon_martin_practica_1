@@ -50,8 +50,11 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   cuerpo:{
+    backgroundColor: 'white',
+    padding: 20,
     marginTop: 20,
-    marginHorizontal:20
+    marginHorizontal:20,
+    borderRadius:10
   },
   Image:{
       marginLeft:30,
@@ -61,7 +64,9 @@ const styles = StyleSheet.create({
       
   },
   body:{
-    flex: 3
+    width: '100%',
+    flex: 3,
+    backgroundColor: '#D6D4D4'
   }
 
 });
