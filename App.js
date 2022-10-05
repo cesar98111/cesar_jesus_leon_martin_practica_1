@@ -8,7 +8,9 @@ export default function App() {
         <Image 
         source={require('./assets/miCara.jpg')}
         style={styles.Image}></Image>
-      </View>
+
+        <Text style={styles.nombre}>César Jesús León Martín</Text>
+        </View>
       <View style={styles.body}>
 
       </View>
@@ -31,12 +33,18 @@ const styles = StyleSheet.create({
   },
   Header:{
     backgroundColor:'grey',
+    flexDirection:'row',
     flex:1,
-    justifyContent:'center',
-    
+    alignItems:'center',
+    justifyContent:'space-evenly',
     width: '100%',
     height: 30
     
+  },
+  nombre:{
+    fontWeight:'bold',
+    color:'white',
+    fontSize: 20
   },
   Image:{
       marginLeft:30,
@@ -48,4 +56,5 @@ const styles = StyleSheet.create({
   body:{
     flex: 3
   }
+
 });
