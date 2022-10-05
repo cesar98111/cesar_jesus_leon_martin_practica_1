@@ -1,6 +1,6 @@
 
 import { StyleSheet, Text, Image, View } from 'react-native';
-
+import QRCode from 'react-native-qrcode-svg';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -12,10 +12,12 @@ export default function App() {
         <Text style={styles.nombre}>César Jesús León Martín</Text>
         </View>
       <View style={styles.body}>
-        <Text style={styles.cuerpo}> Soy estudiante de informatica en la universidad de la ull 
-        ademas de estudiar un cliclo superior de desarrollo de aplicaciones. me apasionan los
-        videojuegos y el cine. mi objetivo es estanciarme en un sitio que 
-        me guste y trabajar en lo que me gusta </Text>
+        <Text style={styles.cuerpo}> Soy estudiante de informática en la universidad de la ull 
+        además de estudiar un cliclo superior de desarrollo de aplicaciones. me apasionan los
+        videojuegos y el cine, mi objetivo es estanciarme en un sitio que 
+        me guste y trabajar en lo que me gusta. </Text>
+
+        <QRCode quietZone={10} size={200}   value="https://github.com/cesar98111/cesar_jesus_leon_martin_practica_1"/>
       </View>
 
       
@@ -51,11 +53,14 @@ const styles = StyleSheet.create({
     fontWeight:'bold'
   },
   cuerpo:{
+  
+    width: "80%",
+    flex:0,
     borderRadius:10,
     backgroundColor: 'white',
     padding: 20,
     marginTop: 20,
-    marginHorizontal:20
+    
     
   },
   Image:{
@@ -66,8 +71,14 @@ const styles = StyleSheet.create({
   },
   body:{
     flex: 3,
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems:"center",
     width: '100%',
     backgroundColor: '#D6D4D4'
+  },
+  QR:{
+    borderColor: "white",
+    borderWidth: 2
   }
-
 });
