@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
   
     width: "80%",
     flex:0,
+    textAlign:'center',
     borderRadius:10,
     backgroundColor: 'white',
     padding: 20,
@@ -77,8 +78,5 @@ const styles = StyleSheet.create({
     width: '100%',
     backgroundColor: '#D6D4D4'
   },
-  QR:{
-    borderColor: "white",
-    borderWidth: 2
-  }
+  
 });
